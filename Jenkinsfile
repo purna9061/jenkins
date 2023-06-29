@@ -10,7 +10,7 @@ node('built-in')
         }
     stage('COntinonusDeploy')
         {
-            sh 'scp /var/lib/jenkins/workspace/scriptedpipeline1/webapp/target/webapp.war ubuntu@172.31.19.87 : /var/lib/tomcat9/webapps/testapp.war'
+            sh 'scp /var/lib/jenkins/workspace/scriptedpipeline1/webapp/target/webapp.war ubuntu@172.31.19.87:/var/lib/tomcat9/webapps/testapp.war'
         }
 
 }
